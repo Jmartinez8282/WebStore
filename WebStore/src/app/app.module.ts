@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CardComponent } from './card/card.component';
 import { NavComponent } from './nav/nav.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { Nav2Component } from './nav2/nav2.component';
 
 
 
@@ -21,6 +22,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     CardComponent,
     NavComponent,
     CarouselComponent,
+    Nav2Component,
     
     
   ],
