@@ -16,6 +16,14 @@ import { ModelXComponent } from './model-x/model-x.component';
 import { ModelYComponent } from './model-y/model-y.component';
 import { CyberTComponent } from './cyber-t/cyber-t.component';
 import { RouterModule } from '@angular/router';
+import {AccordionModule} from 'primeng/accordion';
+import { TShirtsComponent } from './t-shirts/t-shirts.component';
+import { CardSComponent } from './card-s/card-s.component';
+import { Cardm3Component } from './cardm3/cardm3.component';
+import { BootstrapModalComponent } from './bootstrap-modal/bootstrap-modal.component';
+import { LogInComponent } from './log-in/log-in.component';
+import { CartComponent } from './cart/cart.component';
+
 
 
 
@@ -34,6 +42,13 @@ import { RouterModule } from '@angular/router';
     ModelXComponent,
     ModelYComponent,
     CyberTComponent,
+    TShirtsComponent,
+    CardSComponent,
+    Cardm3Component,
+    BootstrapModalComponent,
+    LogInComponent,
+    CartComponent,
+    
     
     
   ],
@@ -41,7 +56,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      {path:'model-s',component:ModelSComponent}
+      
     ])
   ],
   providers: [],
