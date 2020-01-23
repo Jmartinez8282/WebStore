@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,9 @@ import { Cardm3Component } from './cardm3/cardm3.component';
 import { BootstrapModalComponent } from './bootstrap-modal/bootstrap-modal.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { CartComponent } from './cart/cart.component';
+import { CardXComponent } from './card-x/card-x.component';
+import { CardYComponent } from './card-y/card-y.component';
+import { CardCtComponent } from './card-ct/card-ct.component';
 
 
 
@@ -48,6 +52,10 @@ import { CartComponent } from './cart/cart.component';
     BootstrapModalComponent,
     LogInComponent,
     CartComponent,
+    CardXComponent,
+    CardYComponent,
+    CardCtComponent,
+    
     
     
     
@@ -55,6 +63,7 @@ import { CartComponent } from './cart/cart.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgbModule,
     RouterModule.forRoot([
       
     ])
