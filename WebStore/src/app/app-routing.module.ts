@@ -7,6 +7,7 @@ import { ModelYComponent } from './model-y/model-y.component';
 import { ModelXComponent } from './model-x/model-x.component';
 import { CyberTComponent } from './cyber-t/cyber-t.component';
 import { CartComponent } from './cart/cart.component';
+import { AccountComponent } from './account/account.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path:'model-y',component:ModelYComponent},
   {path:'cyber-t',component:CyberTComponent},
   {path:'cart',component:CartComponent},
+  {path:'account',component:AccountComponent},
   {
     path:'',
     redirectTo:'t-shirts',

@@ -27,6 +27,9 @@ import { CartComponent } from './cart/cart.component';
 import { CardXComponent } from './card-x/card-x.component';
 import { CardYComponent } from './card-y/card-y.component';
 import { CardCtComponent } from './card-ct/card-ct.component';
+import { CreateAccComponent } from './create-acc/create-acc.component';
+import { AccountComponent } from './account/account.component';
+import { CardAccComponent } from './card-acc/card-acc.component';
 
 
 
@@ -55,6 +58,9 @@ import { CardCtComponent } from './card-ct/card-ct.component';
     CardXComponent,
     CardYComponent,
     CardCtComponent,
+    CreateAccComponent,
+    AccountComponent,
+    CardAccComponent,
     
     
     
@@ -64,6 +70,7 @@ import { CardCtComponent } from './card-ct/card-ct.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+  
     RouterModule.forRoot([
       
     ])
