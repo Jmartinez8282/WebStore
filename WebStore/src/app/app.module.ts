@@ -30,6 +30,11 @@ import { CardCtComponent } from './card-ct/card-ct.component';
 import { CreateAccComponent } from './create-acc/create-acc.component';
 import { AccountComponent } from './account/account.component';
 import { CardAccComponent } from './card-acc/card-acc.component';
+import { CheckOutComponent } from './check-out/check-out.component';
+import { CreditcardComponent } from './creditcard/creditcard.component';
+import {KeyFilterModule} from 'primeng/keyfilter';
+
+
 
 
 
@@ -61,6 +66,9 @@ import { CardAccComponent } from './card-acc/card-acc.component';
     CreateAccComponent,
     AccountComponent,
     CardAccComponent,
+    CheckOutComponent,
+    CreditcardComponent,
+    
     
     
     
@@ -70,6 +78,9 @@ import { CardAccComponent } from './card-acc/card-acc.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    KeyFilterModule,
+    AccordionModule,
+    
   
     RouterModule.forRoot([
       
@@ -79,3 +90,4 @@ import { CardAccComponent } from './card-acc/card-acc.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

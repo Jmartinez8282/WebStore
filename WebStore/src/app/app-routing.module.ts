@@ -8,6 +8,7 @@ import { ModelXComponent } from './model-x/model-x.component';
 import { CyberTComponent } from './cyber-t/cyber-t.component';
 import { CartComponent } from './cart/cart.component';
 import { AccountComponent } from './account/account.component';
+import { CheckOutComponent } from './check-out/check-out.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path:'cyber-t',component:CyberTComponent},
   {path:'cart',component:CartComponent},
   {path:'account',component:AccountComponent},
+  {path:'check-out',component:CheckOutComponent},
   {
     path:'',
     redirectTo:'t-shirts',
