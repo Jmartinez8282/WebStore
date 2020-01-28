@@ -11,6 +11,7 @@ import { AccountComponent } from './account/account.component';
 import { CheckOutComponent } from './check-out/check-out.component';
 
 
+
 const routes: Routes = [
   {path:'model-s',component:ModelSComponent},
   {path:'t-shirts',component:TShirtsComponent},
