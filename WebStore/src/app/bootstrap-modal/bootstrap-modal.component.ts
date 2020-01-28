@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-bootstrap-modal',
@@ -7,6 +7,7 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 })
 export class BootstrapModalComponent implements OnInit {
   closeResult: string;
+  @Input() product;
   constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
