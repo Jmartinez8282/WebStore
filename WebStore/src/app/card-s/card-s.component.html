@@ -1,8 +1,8 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row">
       <div class="col"*ngFor='let item of productList'>
           <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
+              <img [src]='item.imageURL'class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">{{item.pName}}</h5>
                 <h6>{{item.pNameURL}}</h6>
