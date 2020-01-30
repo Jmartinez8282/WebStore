@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Iproduct } from '../interfaces/iproduct';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-card-x',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-x.component.scss']
 })
 export class CardXComponent implements OnInit {
-
-  constructor() { }
+  productXList: Iproduct[];
+  constructor(private XService:DataService) { }
 
   ngOnInit() {
-  }
+    this.productXList = this.XService.getXProducts();
 
+}
 }

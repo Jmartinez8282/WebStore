@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Iproduct } from '../interfaces/iproduct';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-card-y',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardYComponent implements OnInit {
 
-  constructor() { }
+  productYList: Iproduct[];
+  constructor(private YService:DataService) { }
 
   ngOnInit() {
-  }
+    this.productYList = this.YService.getYProducts();
 
+}
 }
