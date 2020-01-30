@@ -63,4 +63,62 @@ export class DataService {
         x => x.id === sku
       ));
   }
+  private Eproducts: Iproduct[] = [
+    {
+      id: 's467',
+      pName: 'Model 3 T-shirts',
+      pNameURL: 'CyberTruck T',
+      pDesc: 'Black soft Cotton t-shirt image of cyber truck broken glass',
+      additionalInfo: 'image displays shatter glass of cyber truck',
+      price: '$11.00',
+      imageURL: "../../assets/Images/ImageS1.png"
+    },
+    {
+      id: 's468',
+      pName: 'Model 3 T-shirts',
+      pNameURL: 'NinjaStars',
+      pDesc: 'Something to do with Ninja Stars',
+      additionalInfo: 'They can cause a paper cut',
+      price: 'Free',
+      imageURL: '../../assets/Images/ImageX1.png'
+    },
+    {
+      id: 's469',
+      pName: 'Model 3 T-shirts',
+      pNameURL: 'NinjaStars',
+      pDesc: 'Something to do with Ninja Stars',
+      additionalInfo: 'They can cause a paper cut',
+      price: '$1111.00',
+      imageURL: '../../assets/Images/ImageX1.png'
+    },
+    {
+      id: 's470',
+      pName: 'Model 3 T-shirts',
+      pNameURL: 'NinjaStars',
+      pDesc: 'Something to do with Ninja Stars',
+      additionalInfo: 'They can cause a paper cut',
+      price: '$111.00',
+      imageURL: '../../assets/Images/ImageX1.png'
+    },
+    {
+      id: 's471',
+      pName: 'Model 3 T-shirts',
+      pNameURL: 'NinjaStars',
+      pDesc: 'Something to do with Ninja Stars',
+      additionalInfo: 'They can cause a paper cut',
+      price: '$11.00',
+      imageURL: '../../assets/Images/ImageX1.png'
+    }
+  ]
+  
+  getEProducts(): Iproduct[] {
+
+    return this.Eproducts;
+  }
+  getEProduct(sku: string): Observable<Iproduct> {
+    return of(
+      this.Eproducts.find(
+        x => x.id === sku
+      ));
+  }
 }
