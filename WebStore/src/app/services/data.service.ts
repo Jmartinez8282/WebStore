@@ -7,16 +7,16 @@ import { Observable, of } from 'rxjs';
 export class DataService {
   private products: Iproduct[] = [
     {
-      id: '1',
+      id: 's467',
       pName: 'CyberTruck T-Shirt',
       pNameURL: 'CyberTruck T',
       pDesc: 'Black soft Cotton t-shirt image of cyber truck broken glass',
       additionalInfo: 'image displays shatter glass of cyber truck',
       price: '$11.00',
-      imageURL: "../../assets/Images/ImageX1.png"
+      imageURL: "../../assets/Images/ImageS1.png"
     },
     {
-      id: '2',
+      id: 's468',
       pName: 'Ninja Starzzzz',
       pNameURL: 'NinjaStars',
       pDesc: 'Something to do with Ninja Stars',
@@ -25,7 +25,7 @@ export class DataService {
       imageURL: '../../assets/Images/ImageX1.png'
     },
     {
-      id: '3',
+      id: 's469',
       pName: 'Ninja Starszzzzzzzzzzz',
       pNameURL: 'NinjaStars',
       pDesc: 'Something to do with Ninja Stars',
@@ -34,7 +34,7 @@ export class DataService {
       imageURL: '../../assets/Images/ImageX1.png'
     },
     {
-      id: '4',
+      id: 's470',
       pName: 'Ninja Starszzzzzzzzzzzzzzzz',
       pNameURL: 'NinjaStars',
       pDesc: 'Something to do with Ninja Stars',
@@ -43,7 +43,7 @@ export class DataService {
       imageURL: '../../assets/Images/ImageX1.png'
     },
     {
-      id: '5',
+      id: 's471',
       pName: 'Ninja ',
       pNameURL: 'NinjaStars',
       pDesc: 'Something to do with Ninja Stars',
