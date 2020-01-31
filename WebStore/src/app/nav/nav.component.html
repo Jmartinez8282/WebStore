@@ -3,19 +3,19 @@
     <div class="col-4">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" routerLink="/model-s">Model S</a>
+          <a class="nav-link active" routerLink="/model-s"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/model3">Model 3</a>
+          <a class="nav-link" routerLink="/model3"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/model-x">Model X</a>
+          <a class="nav-link" routerLink="/model-x"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="model-y">Model Y</a>
+          <a class="nav-link" routerLink="model-y"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="cyber-t">Cyber-Truck</a>
+          <a class="nav-link" routerLink="cyber-t"></a>
         </li>
       </ul>
     </div>
@@ -26,6 +26,7 @@
         </li>
       </ul>
     </div>
+    
     <div class="col-4">
       <ul class="nav justify-content-end">
         <li class="nav-item">
@@ -155,80 +156,81 @@
           </ng-template>
           <button class="btn btn-link mb-2 mr-2" (click)="openXl2(content)">LogIn</button>
         </li>
-        <li class="nav-item">
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-link my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/cart">
-            <img src="../../assets/Images/cartIcon.png" alt="">
-          </a>
-        </li>
+        
       </ul>
     </div>
   </div>
 </div>
-<div class="container-fluid navnav d-flex justify-content-center">
+<div class="">
   <div class="row">
     <div class="col">
       <nav class="navbar navbar-expand-lg navbar-">
-        <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="nav-link" href="#">Tesla T Shirts</a>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/model-s">Model S</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/model3">Model 3</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/model-x">Model X</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="model-y">Model Y</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="cyber-t">Model Cyber Truck</a>
-          </li>
-        </ul>
-        <div class="form-inline my-2 my-lg-0 justify-content-end">
-                <a id="cart" (click)='toggleList()'><i class="fa fa-shopping-cart"></i> Cart <span class="badge badge-info">{{cartCount}}</span></a>
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="nav-link" href="#">Tesla T Shirts</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/model-s">Model S</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/model3">Model 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/model-x">Model X</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="model-y">Model Y</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="cyber-t">Model Cyber Truck</a>
+              </li>
+            </ul>
+            <div class="continer cartcart justify-content-end">
+              <div class="row">
+                <div class="col">
+                  <div class="form-inline my-2 my-lg-0 justify-content-end">
+                    <img src="../../assets/Images/cartIcon.png" alt="">
+                    <a id="cart" (click)='toggleList()'><i class="fa fa-shopping-cart"></i> Cart <span
+                        class="badge badge-info">{{cartCount}}</span></a>
+                  </div>
+                </div>
+              </div>
             </div>
+
+          </div>
         </div>
-      </div>
       </nav>
       <div class="container" *ngIf="showList">
         <div class="shopping-cart">
-            <div class="shopping-cart-header">
-                <i class="fa fa-shopping-cart cart-icon"></i><span class="badge badge-info">{{cartCount}}</span>
-                <div class="shopping-cart-total">
-                    <span>Total:</span>
-                    <span>${{cartTotal}}</span>
-                </div>
+          <div class="shopping-cart-header">
+            <i class="fa fa-shopping-cart cart-icon"></i><span class="badge badge-info">{{cartCount}}</span>
+            <div class="shopping-cart-total">
+              <span>Total:</span>
+              <span>${{cartTotal}}</span>
             </div>
-            <div *ngIf="cartItems.length == 0" class="py-2">
-                No items in your cart!
-            </div>
-            <ul class="shopping-cart-items">
-                <li *ngFor="let item of cartItems; let i = index">
-                    <!-- <img src="assets/test.jpg" alt="Item" /> -->
-                    <span class="item-name">{{item.pName}}</span>
-                    <span class="item-price">${{item.price}}</span>
-                    <span class="item-quantity">Quantity: {{item.quantity}}</span>
-                    <a class="item-remove text-danger"(click)="removeFromCart(item,idex)"> Remove </a>
-                </li>
-            </ul>
-            <a href="#" class="btn btn-primary btn-block">Checkout</a>
+          </div>
+          <div *ngIf="cartItems.length == 0" class="py-2">
+            No items in your cart!
+          </div>
+          <ul class="shopping-cart-items">
+            <li *ngFor="let item of cartItems; let i = index">
+              <!-- <img src="assets/test.jpg" alt="Item" /> -->
+              <span class="item-name">{{item.pName}}</span>
+              <span class="item-price">${{item.price}}</span>
+              <span class="item-quantity">Quantity: {{item.quantity}}</span>
+              <a class="item-remove text-danger" (click)="removeFromCart(item,idex)"> Remove </a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-block">Checkout</a>
         </div>
       </div>
-      
-      
+
+
     </div>
+
   </div>
 </div>
