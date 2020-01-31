@@ -33,7 +33,7 @@ import { CardAccComponent } from './card-acc/card-acc.component';
 import { CheckOutComponent } from './check-out/check-out.component';
 import { CreditcardComponent } from './creditcard/creditcard.component';
 import {KeyFilterModule} from 'primeng/keyfilter';
-
+import { NgbdCarouselBasic } from './carousel-basic';
 
 
 
@@ -76,6 +76,7 @@ import {KeyFilterModule} from 'primeng/keyfilter';
     
     
     
+    
   ],
   imports: [
     BrowserModule,
@@ -91,6 +92,9 @@ import {KeyFilterModule} from 'primeng/keyfilter';
   ],
   providers: [],
   bootstrap: [AppComponent]
+  exports: [NgbdCarouselBasic],
 })
 export class AppModule { }
+export class NgbdCarouselBasicModule {}
+
 

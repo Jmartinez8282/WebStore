@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Iproduct } from '../interfaces/iproduct';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-card-ct',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardCtComponent implements OnInit {
 
-  constructor() { }
+  productCList: Iproduct[];
+  constructor(private CService:DataService) { }
 
   ngOnInit() {
-  }
+    this.productCList = this.CService.getCProducts();
+
+}
 
 }
