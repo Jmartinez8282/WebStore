@@ -6,4 +6,5 @@ export interface Iproduct {
     additionalInfo: string;
     price:string;
     imageURL:string;
+    quantity:number;
 }

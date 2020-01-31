@@ -9,7 +9,7 @@ import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardComponent } from './card/card.component';
 import { NavComponent } from './nav/nav.component';
-import { CarouselComponent } from './carousel/carousel.component';
+
 import { Nav2Component } from './nav2/nav2.component';
 import { ModelSComponent } from './model-s/model-s.component';
 import { Model3Component } from './model3/model3.component';
@@ -33,7 +33,12 @@ import { CardAccComponent } from './card-acc/card-acc.component';
 import { CheckOutComponent } from './check-out/check-out.component';
 import { CreditcardComponent } from './creditcard/creditcard.component';
 import {KeyFilterModule} from 'primeng/keyfilter';
-import { NgbdCarouselBasic } from './carousel-basic';
+
+
+
+
+
+
 
 
 
@@ -49,7 +54,7 @@ import { NgbdCarouselBasic } from './carousel-basic';
     FooterComponent,
     CardComponent,
     NavComponent,
-    CarouselComponent,
+    
     Nav2Component,
     ModelSComponent,
     Model3Component,
@@ -77,6 +82,8 @@ import { NgbdCarouselBasic } from './carousel-basic';
     
     
     
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -85,6 +92,8 @@ import { NgbdCarouselBasic } from './carousel-basic';
     KeyFilterModule,
     AccordionModule,
     
+    
+    
   
     RouterModule.forRoot([
       
@@ -92,7 +101,6 @@ import { NgbdCarouselBasic } from './carousel-basic';
   ],
   providers: [],
   bootstrap: [AppComponent]
-  exports: [NgbdCarouselBasic],
 })
 export class AppModule { }
 export class NgbdCarouselBasicModule {}

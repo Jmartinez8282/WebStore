@@ -13,7 +13,8 @@ export class DataService {
       pDesc: 'Black soft Cotton t-shirt image of model s in development stages',
       additionalInfo: 'Black model s tesla t-shirt prined in front',
       price: '$11.00',
-      imageURL: "../../assets/Images/ImageS1.png"
+      imageURL: "../../assets/Images/ImageS1.png",
+      quantity:0
     },
     {
       id: 's468',
@@ -22,7 +23,8 @@ export class DataService {
       pDesc: 'Grey soft cotton t-shirt',
       additionalInfo: 'Image of blue tesla model s',
       price: '$9.00',
-      imageURL: '../../assets/Images/ImageS2.png'
+      imageURL: '../../assets/Images/ImageS2.png',
+      quantity:0
     },
     {
       id: 's469',
@@ -31,15 +33,17 @@ export class DataService {
       pDesc: 'fresh model S cotton T-shirt',
       additionalInfo: 'Tesla model S haha, gas t-shirt',
       price: '$10.00',
-      imageURL: '../../assets/Images/ImageS3.png'
+      imageURL: '../../assets/Images/ImageS4.png',
+      quantity:0
     },
-    {      id: 's470',
+    { id: 's470',
       pName: 'Model S T-shirt',
       pNameURL: 'Model S T-shirt',
       pDesc: 'black soft cotton t-shirt',
       additionalInfo: 'Black t-shirt with white image of tesla model s',
       price: '$12.00',
-      imageURL: '../../assets/Images/ImageS4.png'
+      imageURL: '../../assets/Images/ImageS4.png',
+      quantity:0
     },
     {
       id: 's471',
@@ -48,7 +52,8 @@ export class DataService {
       pDesc: 'White soft Cotton t-shirt',
       additionalInfo: 'image of model s in development stages printed in front',
       price: '$11.00',
-      imageURL: '../../assets/Images/ImageS5.png'
+      imageURL: '../../assets/Images/ImageS5.png',
+      quantity:0
     },
     {
       id: 's472',
@@ -57,25 +62,28 @@ export class DataService {
       pDesc: 'White on White T-shirt',
       additionalInfo: 'White cotton T-shirt with with white tesla model s image in front',
       price: '$11.00',
-      imageURL: '../../assets/Images/ImageS6.png'
+      imageURL: '../../assets/Images/ImageS6.png',
+      quantity:0
     },
     {
       id: 's473',
       pName: 'Model S T-shirt ',
-      pNameURL: 'NinjaStars',
-      pDesc: 'Something to do with Ninja Stars',
-      additionalInfo: 'They can cause a paper cut',
+      pNameURL: 'Gray Model S T-shirt',
+      pDesc: 'Dark gray model s car image printed in front',
+      additionalInfo: 'soft cotton t-shirt',
       price: '$11.00',
-      imageURL: '../../assets/Images/ImageS7.png'
+      imageURL: '../../assets/Images/ImageS7.png',
+      quantity:0
     },
     {
       id: 's474',
       pName: 'Model S T-shirt ',
       pNameURL: 'Model S T-shirt',
-      pDesc: 'Something to do with Ninja Stars',
-      additionalInfo: 'They can cause a paper cut',
+      pDesc: 'Black Model S P100D T-shirt',
+      additionalInfo: 'Tesla Model s P100D can go 0-60 in 2.9 sec',
       price: '$11.00',
-      imageURL: '../../assets/Images/ImageS8.png'
+      imageURL: '../../assets/Images/ImageS8.png',
+      quantity:0
     },
     ]
   constructor() { }
@@ -93,20 +101,22 @@ export class DataService {
     {
       id: 's467',
       pName: 'Model 3 T-shirts',
-      pNameURL: 'CyberTruck T',
+      pNameURL: 'Model 3 Tshirt',
       pDesc: 'Black soft Cotton t-shirt image of cyber truck broken glass',
       additionalInfo: 'image displays shatter glass of cyber truck',
       price: '$11.00',
-      imageURL: "../../assets/Images/ImageS1.png"
+      imageURL: "../../assets/Images/ImageM3-1.png",
+      quantity:0
     },
     {
       id: 's468',
       pName: 'Model 3 T-shirts',
-      pNameURL: 'NinjaStars',
-      pDesc: 'Something to do with Ninja Stars',
+      pNameURL: 'Tesla black model 3  ',
+      pDesc: 'Black soft cotton t-shirt image of the number 3 in grey',
       additionalInfo: 'They can cause a paper cut',
-      price: 'Free',
-      imageURL: '../../assets/Images/ImageX1.png'
+      price: '12.00',
+      imageURL: '../../assets/Images/ImageM3-3.png',
+      quantity:0
     },
     {
       id: 's469',
@@ -115,7 +125,8 @@ export class DataService {
       pDesc: 'Something to do with Ninja Stars',
       additionalInfo: 'They can cause a paper cut',
       price: '$1111.00',
-      imageURL: '../../assets/Images/ImageX1.png'
+      imageURL: '../../assets/Images/ImageM3-4.png',
+      quantity:0
     },
     {
       id: 's470',
@@ -124,7 +135,8 @@ export class DataService {
       pDesc: 'Something to do with Ninja Stars',
       additionalInfo: 'They can cause a paper cut',
       price: '$111.00',
-      imageURL: '../../assets/Images/ImageX1.png'
+      imageURL: '../../assets/Images/ImageM3-5.png',
+      quantity:0
     },
     {
       id: 's471',
@@ -133,7 +145,38 @@ export class DataService {
       pDesc: 'Something to do with Ninja Stars',
       additionalInfo: 'They can cause a paper cut',
       price: '$11.00',
-      imageURL: '../../assets/Images/ImageX1.png'
+      imageURL: '../../assets/Images/ImageM3-6.png',
+      quantity:0
+    },
+    {
+      id: 's471',
+      pName: 'Model 3 T-shirts',
+      pNameURL: 'NinjaStars',
+      pDesc: 'Something to do with Ninja Stars',
+      additionalInfo: 'They can cause a paper cut',
+      price: '$11.00',
+      imageURL: '../../assets/Images/ImageM3-7.png',
+      quantity:0
+    },
+    {
+      id: 's471',
+      pName: 'Model 3 T-shirts',
+      pNameURL: 'NinjaStars',
+      pDesc: 'Something to do with Ninja Stars',
+      additionalInfo: 'They can cause a paper cut',
+      price: '$11.00',
+      imageURL: '../../assets/Images/ImageM3-8.png',
+      quantity:0
+    },
+    {
+      id: 's471',
+      pName: 'Model 3 T-shirts',
+      pNameURL: 'NinjaStars',
+      pDesc: 'Something to do with Ninja Stars',
+      additionalInfo: 'They can cause a paper cut',
+      price: '$11.00',
+      imageURL: '../../assets/Images/ImageM3-dark.png',
+      quantity:0
     }
   ]
   
@@ -155,7 +198,8 @@ export class DataService {
       pDesc: 'Black soft Cotton t-shirt image of cyber truck broken glass',
       additionalInfo: 'image displays shatter glass of cyber truck',
       price: '$11.00',
-      imageURL: "../../assets/Images/ImageS1.png"
+      imageURL: "../../assets/Images/ImageX1.png",
+      quantity:0
     },
     {
       id: 's468',
@@ -164,7 +208,8 @@ export class DataService {
       pDesc: 'Something to do with Ninja Stars',
       additionalInfo: 'They can cause a paper cut',
       price: 'Free',
-      imageURL: '../../assets/Images/ImageX1.png'
+      imageURL: '../../assets/Images/ImageX2.png',
+      quantity:0
     },
     {
       id: 's469',
@@ -173,7 +218,8 @@ export class DataService {
       pDesc: 'Something to do with Ninja Stars',
       additionalInfo: 'They can cause a paper cut',
       price: '$1111.00',
-      imageURL: '../../assets/Images/ImageX1.png'
+      imageURL: '../../assets/Images/ImageX3.png',
+      quantity:0
     },
     {
       id: 's470',
@@ -182,7 +228,8 @@ export class DataService {
       pDesc: 'Something to do with Ninja Stars',
       additionalInfo: 'They can cause a paper cut',
       price: '$111.00',
-      imageURL: '../../assets/Images/ImageX1.png'
+      imageURL: '../../assets/Images/ImageX4.png',
+      quantity:0
     },
     {
       id: 's471',
@@ -191,7 +238,38 @@ export class DataService {
       pDesc: 'Something to do with Ninja Stars',
       additionalInfo: 'They can cause a paper cut',
       price: '$11.00',
-      imageURL: '../../assets/Images/ImageX1.png'
+      imageURL: '../../assets/Images/ImageX5.png',
+      quantity:0
+    },
+    {
+      id: 's471',
+      pName: 'Model X T-shirts',
+      pNameURL: 'NinjaStars',
+      pDesc: 'Something to do with Ninja Stars',
+      additionalInfo: 'They can cause a paper cut',
+      price: '$11.00',
+      imageURL: '../../assets/Images/ImageX6.png',
+      quantity:0
+    },
+    {
+      id: 's471',
+      pName: 'Model X T-shirts',
+      pNameURL: 'NinjaStars',
+      pDesc: 'Something to do with Ninja Stars',
+      additionalInfo: 'They can cause a paper cut',
+      price: '$11.00',
+      imageURL: '../../assets/Images/ImageX7.png',
+      quantity:0
+    },
+    {
+      id: 's471',
+      pName: 'Model X T-shirts',
+      pNameURL: 'NinjaStars',
+      pDesc: 'Something to do with Ninja Stars',
+      additionalInfo: 'They can cause a paper cut',
+      price: '$11.00',
+      imageURL: '../../assets/Images/ImageX8.png',
+      quantity:0
     }
   ]
   
@@ -213,7 +291,8 @@ export class DataService {
       pDesc: 'Black soft Cotton t-shirt image of cyber truck broken glass',
       additionalInfo: 'image displays shatter glass of cyber truck',
       price: '$11.00',
-      imageURL: "../../assets/Images/ImageS1.png"
+      imageURL: "../../assets/Images/ImageY1.png",
+      quantity:0
     },
     {
       id: 's468',
@@ -222,36 +301,10 @@ export class DataService {
       pDesc: 'Something to do with Ninja Stars',
       additionalInfo: 'They can cause a paper cut',
       price: 'Free',
-      imageURL: '../../assets/Images/ImageX1.png'
+      imageURL: '../../assets/Images/ImageY2.png',
+      quantity:0
     },
-    {
-      id: 's469',
-      pName: 'Model Y T-shirts',
-      pNameURL: 'NinjaStars',
-      pDesc: 'Something to do with Ninja Stars',
-      additionalInfo: 'They can cause a paper cut',
-      price: '$1111.00',
-      imageURL: '../../assets/Images/ImageX1.png'
-    },
-    {
-      id: 's470',
-      pName: 'Model Y T-shirts',
-      pNameURL: 'NinjaStars',
-      pDesc: 'Something to do with Ninja Stars',
-      additionalInfo: 'They can cause a paper cut',
-      price: '$111.00',
-      imageURL: '../../assets/Images/ImageX1.png'
-    },
-    {
-      id: 's471',
-      pName: 'Model Y T-shirts',
-      pNameURL: 'NinjaStars',
-      pDesc: 'Something to do with Ninja Stars',
-      additionalInfo: 'They can cause a paper cut',
-      price: '$11.00',
-      imageURL: '../../assets/Images/ImageX1.png'
-    }
-  ]
+    ]
   
   getYProducts(): Iproduct[] {
 
@@ -271,7 +324,8 @@ export class DataService {
       pDesc: 'Black soft Cotton t-shirt image of cyber truck broken glass',
       additionalInfo: 'image displays shatter glass of cyber truck',
       price: '$11.00',
-      imageURL: "../../assets/Images/ImageS1.png"
+      imageURL: "../../assets/Images/cyberShirt.png",
+      quantity:0
     },
     {
       id: 's468',
@@ -280,7 +334,8 @@ export class DataService {
       pDesc: 'Something to do with Ninja Stars',
       additionalInfo: 'They can cause a paper cut',
       price: 'Free',
-      imageURL: '../../assets/Images/ImageX1.png'
+      imageURL: '../../assets/Images/cyberShirt2.png',
+      quantity:0
     },
     {
       id: 's469',
@@ -289,7 +344,8 @@ export class DataService {
       pDesc: 'Something to do with Ninja Stars',
       additionalInfo: 'They can cause a paper cut',
       price: '$1111.00',
-      imageURL: '../../assets/Images/ImageX1.png'
+      imageURL: '../../assets/Images/cyberShirt3.png',
+      quantity:0
     },
     {
       id: 's470',
@@ -298,7 +354,8 @@ export class DataService {
       pDesc: 'Something to do with Ninja Stars',
       additionalInfo: 'They can cause a paper cut',
       price: '$111.00',
-      imageURL: '../../assets/Images/ImageX1.png'
+      imageURL: '../../assets/Images/cyberShirt4.png',
+      quantity:0
     },
     {
       id: 's471',
@@ -307,9 +364,40 @@ export class DataService {
       pDesc: 'Something to do with Ninja Stars',
       additionalInfo: 'They can cause a paper cut',
       price: '$11.00',
-      imageURL: '../../assets/Images/ImageX1.png'
-    }
-  ]
+      imageURL: '../../assets/Images/cyberShirt5.png',
+      quantity:0
+    },
+    {
+      id: 's471',
+      pName: 'Cyber Truck T-shirts',
+      pNameURL: 'NinjaStars',
+      pDesc: 'Something to do with Ninja Stars',
+      additionalInfo: 'They can cause a paper cut',
+      price: '$11.00',
+      imageURL: '../../assets/Images/cyberShirt6.png',
+      quantity:0
+    },
+    {
+      id: 's471',
+      pName: 'Cyber Truck T-shirts',
+      pNameURL: 'NinjaStars',
+      pDesc: 'Something to do with Ninja Stars',
+      additionalInfo: 'They can cause a paper cut',
+      price: '$11.00',
+      imageURL: '../../assets/Images/cyberShirt7.png',
+      quantity:0
+    },
+    {
+      id: 's471',
+      pName: 'Cyber Truck T-shirts',
+      pNameURL: 'NinjaStars',
+      pDesc: 'Something to do with Ninja Stars',
+      additionalInfo: 'They can cause a paper cut',
+      price: '$11.00',
+      imageURL: '../../assets/Images/cyberShirt8.png',
+      quantity:0
+    },
+    ]
   
   getCProducts(): Iproduct[] {
 
@@ -324,49 +412,45 @@ export class DataService {
   private Tproducts: Iproduct[] = [
     {
       id: 's467',
-      pName: 'Cyber Truck T-shirts',
-      pNameURL: 'CyberTruck T',
-      pDesc: 'Black soft Cotton t-shirt image of cyber truck broken glass',
-      additionalInfo: 'image displays shatter glass of cyber truck',
+      pName: 'Tesla Model Y T-shirts',
+      pNameURL: 'Tesla Model Y',
+      pDesc: 'Black soft Cotton t-shirt image of tesla model Y',
+      additionalInfo: '',
       price: '$11.00',
-      imageURL: "../../assets/Images/ImageS1.png"
+      imageURL: "../../assets/Images/ImageS1.png",
+      quantity:0
     },
     {
       id: 's468',
-      pName: 'Model S T-shirts',
-      pNameURL: 'NinjaStars',
-      pDesc: 'Something to do with Ninja Stars',
-      additionalInfo: 'They can cause a paper cut',
+      pName: 'Model X T-shirts',
+      pNameURL: 'Model X black soft cotton t-shirt',
+      pDesc: 'haha, gas Tesla Model X with falcon wings open.',
+      additionalInfo: 'black t-shirt with Tesla model x in white printed in frng',
       price: 'Free',
-      imageURL: '../../assets/Images/ImageX1.png'
+      imageURL: '../../assets/Images/ImageX1.png',
+      quantity:0
     },
     {
       id: 's469',
       pName: 'Model Y  T-shirts',
-      pNameURL: 'NinjaStars',
-      pDesc: 'Something to do with Ninja Stars',
-      additionalInfo: 'They can cause a paper cut',
-      price: '$1111.00',
-      imageURL: '../../assets/Images/ImageX1.png'
+      pNameURL: 'Grey cotton t-shirt ',
+      pDesc: 'my other car is a reservasion with model y in front',
+      additionalInfo: '',
+      price: '$11.00',
+      imageURL: '../../assets/Images/ImageM3-1.png',
+      quantity:0
     },
     {
       id: 's470',
       pName: 'Cyber Truck T-shirts',
-      pNameURL: 'NinjaStars',
-      pDesc: 'Something to do with Ninja Stars',
-      additionalInfo: 'They can cause a paper cut',
-      price: '$111.00',
-      imageURL: '../../assets/Images/ImageX1.png'
-    },
-    {
-      id: 's471',
-      pName: 'Model 3 T-shirts',
-      pNameURL: 'NinjaStars',
-      pDesc: 'Something to do with Ninja Stars',
+      pNameURL: 'black cotton cyber truck t-shirt',
+      pDesc: 'tesla cyber truck t-shirt featuring broken glass image ',
       additionalInfo: 'They can cause a paper cut',
       price: '$11.00',
-      imageURL: '../../assets/Images/ImageX1.png'
-    }
+      imageURL: '../../assets/Images/cyberShirt.png',
+      quantity:0
+    },
+    
   ]
   
   getTProducts(): Iproduct[] {
