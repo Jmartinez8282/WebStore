@@ -4,18 +4,18 @@
 <div class="container-fluid">
   <div class="row">
       <div class="col"*ngFor='let item of productList'>
-          <div class="card" style="width: 18rem;">
+          <div class="card" style="width: 23rem;">
               <img [src]='item.imageURL'class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">{{item.pName}}</h5>
                 <h6>{{item.pNameURL}}</h6>
                 <h6>{{item.pDesc}}</h6>
-                <h6>{{item.additonaInfo}}</h6>
+                <h6>{{item.additionalInfo}}</h6>
                 <h6>{{item.price}}</h6>
                 <p class="card-text"></p>
                 <a>Item#{{item.id}}</a>
                 <app-bootstrap-modal [product] ='item'></app-bootstrap-modal>
-                <a routerLink ="/{{item.pNameURL}}/{{item.id}}"class="btn btn-primary">add to cart</a>
+                <button routerLink ="/{{item.pNameURL}}/{{item.id}}"class="btn btn-dark">add to cart</button>
               </div>
             </div>
           
