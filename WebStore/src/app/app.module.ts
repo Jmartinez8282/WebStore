@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +17,7 @@ import { ModelXComponent } from './model-x/model-x.component';
 import { ModelYComponent } from './model-y/model-y.component';
 import { CyberTComponent } from './cyber-t/cyber-t.component';
 import { RouterModule } from '@angular/router';
-import {AccordionModule} from 'primeng/accordion';
+import { AccordionModule } from 'primeng/accordion';
 import { TShirtsComponent } from './t-shirts/t-shirts.component';
 import { CardSComponent } from './card-s/card-s.component';
 import { Cardm3Component } from './cardm3/cardm3.component';
@@ -32,7 +32,9 @@ import { AccountComponent } from './account/account.component';
 import { CardAccComponent } from './card-acc/card-acc.component';
 import { CheckOutComponent } from './check-out/check-out.component';
 import { CreditcardComponent } from './creditcard/creditcard.component';
-import {KeyFilterModule} from 'primeng/keyfilter';
+import { KeyFilterModule } from 'primeng/keyfilter';
+import { CarouselComponent } from './carousel/carousel.component';
+
 
 
 
@@ -54,7 +56,7 @@ import {KeyFilterModule} from 'primeng/keyfilter';
     FooterComponent,
     CardComponent,
     NavComponent,
-    
+
     Nav2Component,
     ModelSComponent,
     Model3Component,
@@ -75,34 +77,22 @@ import {KeyFilterModule} from 'primeng/keyfilter';
     CardAccComponent,
     CheckOutComponent,
     CreditcardComponent,
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  ],
+    CarouselComponent,
+],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     KeyFilterModule,
     AccordionModule,
-    
-    
-    
-  
-    RouterModule.forRoot([
-      
+   RouterModule.forRoot([
+
     ])
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-export class NgbdCarouselBasicModule {}
+export class NgbdCarouselBasicModule { }
 
 

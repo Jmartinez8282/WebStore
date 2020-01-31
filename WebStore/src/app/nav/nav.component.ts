@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import { Iproduct } from '../interfaces/iproduct';
 
 @Component({
   selector: 'app-nav',
@@ -21,7 +22,10 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 })
 export class NavComponent implements OnInit {
   closeResult: string;
-
+  cartCount = 0;
+  cartItems: Iproduct [] = [];
+  showList = false;
+  cartTotal = 0;
   constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
