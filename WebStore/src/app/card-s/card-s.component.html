@@ -15,7 +15,7 @@
                 <p class="card-text"></p>
                 <a>Item#{{item.id}}</a>
                 <app-bootstrap-modal [product] ='item'></app-bootstrap-modal>
-                <button routerLink ="/{{item.pNameURL}}/{{item.id}}"class="btn btn-dark">add to cart</button>
+                <button class='btn btn-primary' (click)="addToCart(item)" >+</button>
               </div>
             </div>
           
