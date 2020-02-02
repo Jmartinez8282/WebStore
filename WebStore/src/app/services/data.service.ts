@@ -12,7 +12,7 @@ export class DataService {
       pNameURL: 'Model S T-shirt',
       pDesc: 'Black soft Cotton t-shirt image of model s in development stages',
       additionalInfo: 'Black model s tesla t-shirt prined in front',
-      price: '$11.00',
+      price: '11.00',
       imageURL: "../../assets/Images/ImageS1.png",
       quantity:0
     },
@@ -22,7 +22,7 @@ export class DataService {
       pNameURL: 'Model S T-shirt',
       pDesc: 'Grey soft cotton t-shirt',
       additionalInfo: 'Image of blue tesla model s',
-      price: '$9.00',
+      price: '9.00',
       imageURL: '../../assets/Images/ImageS2.png',
       quantity:0
     },
@@ -32,7 +32,7 @@ export class DataService {
       pNameURL: 'Model S T-shirt',
       pDesc: 'fresh model S cotton T-shirt',
       additionalInfo: 'Tesla model S haha, gas t-shirt',
-      price: '$10.00',
+      price: '10.00',
       imageURL: '../../assets/Images/ImageS4.png',
       quantity:0
     },
@@ -41,7 +41,7 @@ export class DataService {
       pNameURL: 'Model S T-shirt',
       pDesc: 'black soft cotton t-shirt',
       additionalInfo: 'Black t-shirt with white image of tesla model s',
-      price: '$12.00',
+      price: '12.00',
       imageURL: '../../assets/Images/ImageS4.png',
       quantity:0
     },
@@ -51,7 +51,7 @@ export class DataService {
       pNameURL: 'Model S T-shirt',
       pDesc: 'White soft Cotton t-shirt',
       additionalInfo: 'image of model s in development stages printed in front',
-      price: '$11.00',
+      price: '11.00',
       imageURL: '../../assets/Images/ImageS5.png',
       quantity:0
     },
@@ -61,7 +61,7 @@ export class DataService {
       pNameURL: 'Model S T-shirt',
       pDesc: 'White on White T-shirt',
       additionalInfo: 'White cotton T-shirt with with white tesla model s image in front',
-      price: '$11.00',
+      price: '11.00',
       imageURL: '../../assets/Images/ImageS6.png',
       quantity:0
     },
@@ -71,7 +71,7 @@ export class DataService {
       pNameURL: 'Gray Model S T-shirt',
       pDesc: 'Dark gray model s car image printed in front',
       additionalInfo: 'soft cotton t-shirt',
-      price: '$11.00',
+      price: '11.00',
       imageURL: '../../assets/Images/ImageS7.png',
       quantity:0
     },
@@ -81,7 +81,7 @@ export class DataService {
       pNameURL: 'Model S T-shirt',
       pDesc: 'Black Model S P100D T-shirt',
       additionalInfo: 'Tesla Model s P100D can go 0-60 in 2.9 sec',
-      price: '$11.00',
+      price: '11.00',
       imageURL: '../../assets/Images/ImageS8.png',
       quantity:0
     },

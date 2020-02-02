@@ -41,7 +41,6 @@ export class CartServices {
         
       
      
-      console.log(this.cartItems);
       this.$cartItems.next(this.cartItems);
       this.cartTotal += +item.price;
     

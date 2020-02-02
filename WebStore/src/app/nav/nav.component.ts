@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation, } from '@angular/core';
-import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { Iproduct } from '../interfaces/iproduct';
+import { CartServices } from '../services/cart.service';
 
 @Component({
   selector: 'app-nav',
@@ -23,21 +24,41 @@ import { Iproduct } from '../interfaces/iproduct';
 export class NavComponent implements OnInit {
   closeResult: string;
   cartCount = 0;
-  cartItems: Iproduct [] = [];
+  cartItems: Iproduct[] = [];
   showList = false;
   cartTotal = 0;
-  constructor(private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal, private cartService: CartServices) { }
 
   ngOnInit() {
+
+    this.cartService.$cartItems.subscribe(items => {
+
+      this.cartItems = items;
+
+    });
+    this.cartService.$cartTotal.subscribe(total => {
+
+      this.cartTotal = total;
+
+    });
+    this.cartService.$cartQuanity.subscribe(count => {
+
+      this.cartCount = count;
+
+    });
   }
+
+
   openXl(longcontent) {
     this.modalService.open(longcontent, { size: 'xl' });
   }
   openXl2(content) {
     this.modalService.open(content, { size: 'xl' });
   }
-  
-  
-
-  
+  toggleList(){
+    this.showList =!this.showList;
+  }
+  removeFromCart(item,index){
+    this.cartService.removeProduct(item,index);
+  }
 }
