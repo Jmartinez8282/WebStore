@@ -102,7 +102,7 @@ export class DataService {
       id: 's467',
       pName: 'Model 3 T-shirts',
       pNameURL: 'Model 3 Tshirt',
-      pDesc: 'Black soft Cotton t-shirt image of cyber truck broken glass',
+      pDesc: 'Grey Cotton Model 3 T-shirt',
       additionalInfo: 'image displays shatter glass of cyber truck',
       price: '$11.00',
       imageURL: "../../assets/Images/ImageM3-1.png",
