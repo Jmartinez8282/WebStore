@@ -2,6 +2,7 @@ import { Component, OnInit, ViewEncapsulation, } from '@angular/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { Iproduct } from '../interfaces/iproduct';
 import { CartServices } from '../services/cart.service';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-nav',
@@ -27,7 +28,7 @@ export class NavComponent implements OnInit {
   cartItems: Iproduct[] = [];
   showList = false;
   cartTotal = 0;
-  constructor(private modalService: NgbModal, private cartService: CartServices) { }
+  constructor(private modalService: NgbModal, private cartService: CartServices,private dService:DataService) { }
 
   ngOnInit() {
 
@@ -61,4 +62,12 @@ export class NavComponent implements OnInit {
   removeFromCart(item,index){
     this.cartService.removeProduct(item,index);
   }
+  logIn(userName:string,passWord:string){
+    //we are going to compare password sore in our servi
+    if(this.dService.checkCred(userName,passWord)){
+      alert ('you are LoggedIn');
+    }else{
+      alert ('Try again');
+    }
+    }
 }

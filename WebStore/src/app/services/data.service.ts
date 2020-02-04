@@ -1,10 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Iproduct } from '../interfaces/iproduct';
 import { Observable, of } from 'rxjs';
+import { User } from '../interface/user';
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
+  userList: User[] = [
+    {
+      userName:'jateen',
+      passWord:'JaTeam'
+    }
+  ];
+  
   private products: Iproduct[] = [
     {
       id: 's467',
@@ -87,6 +95,18 @@ export class DataService {
     },
     ]
   constructor() { }
+  checkCred(userName: string,passWord: string):boolean{
+    let result = false;
+    if(userName === this.userList[0].userName){
+    if(passWord === this.userList[0].passWord){
+      result = true;
+    }
+    }
+        return result;
+      }
+
+
+
   getProducts(): Iproduct[] {
 
     return this.products;
