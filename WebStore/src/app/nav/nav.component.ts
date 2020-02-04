@@ -48,7 +48,14 @@ export class NavComponent implements OnInit {
 
     });
   }
-
+  logIn(userName:string,passWord:string){
+    //we are going to compare password sore in our servi
+    if(this.dService.checkCred(userName,passWord)){
+      alert ('you are LoggedIn');
+    }else{
+      alert ('Try again');
+    }
+    }
 
   openXl(longcontent) {
     this.modalService.open(longcontent, { size: 'xl' });
@@ -62,12 +69,4 @@ export class NavComponent implements OnInit {
   removeFromCart(item,index){
     this.cartService.removeProduct(item,index);
   }
-  logIn(userName:string,passWord:string){
-    //we are going to compare password sore in our servi
-    if(this.dService.checkCred(userName,passWord)){
-      alert ('you are LoggedIn');
-    }else{
-      alert ('Try again');
-    }
-    }
 }
