@@ -1,10 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Iproduct } from '../interfaces/iproduct';
 import { Observable, of } from 'rxjs';
+import { User } from '../interface/user';
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
+  userList: User[] = [
+    {
+      userName:'jateen',
+      passWord:'JaTeam'
+    }
+  ];
+  
   private products: Iproduct[] = [
     {
       id: 's467',
@@ -88,6 +96,18 @@ export class DataService {
     },
   ]
   constructor() { }
+  checkCred(userName: string,passWord: string):boolean{
+    let result = false;
+    if(userName === this.userList[0].userName){
+    if(passWord === this.userList[0].passWord){
+      result = true;
+    }
+    }
+        return result;
+      }
+
+
+
   getProducts(): Iproduct[] {
 
     return this.products;
@@ -103,9 +123,15 @@ export class DataService {
       id: 's467',
       pName: 'Model 3 T-shirts',
       pNameURL: 'Model 3 Tshirt',
+<<<<<<< HEAD
       pDesc: 'Grey cotton Tesla Model 3 Shirt',
       additionalInfo: 'image displays blue model 3 with red "My other car is a reservation"',
       price: '11.00',
+=======
+      pDesc: 'Grey Cotton Model 3 T-shirt',
+      additionalInfo: 'image displays shatter glass of cyber truck',
+      price: '$11.00',
+>>>>>>> 397a22e0161088ef7c62fffa96ef7fbdff8a0f03
       imageURL: "../../assets/Images/ImageM3-1.png",
       quantity: 0
     },
