@@ -123,15 +123,9 @@ export class DataService {
       id: 's467',
       pName: 'Model 3 T-shirts',
       pNameURL: 'Model 3 Tshirt',
-<<<<<<< HEAD
       pDesc: 'Grey cotton Tesla Model 3 Shirt',
       additionalInfo: 'image displays blue model 3 with red "My other car is a reservation"',
       price: '11.00',
-=======
-      pDesc: 'Grey Cotton Model 3 T-shirt',
-      additionalInfo: 'image displays shatter glass of cyber truck',
-      price: '$11.00',
->>>>>>> 397a22e0161088ef7c62fffa96ef7fbdff8a0f03
       imageURL: "../../assets/Images/ImageM3-1.png",
       quantity: 0
     },
