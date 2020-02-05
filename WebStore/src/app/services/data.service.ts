@@ -125,7 +125,7 @@ export class DataService {
       pNameURL: 'Model 3 Tshirt',
       pDesc: 'Grey Cotton Model 3 T-shirt',
       additionalInfo: 'image displays shatter glass of cyber truck',
-      price: '$11.00',
+      price: '11.00',
       imageURL: "../../assets/Images/ImageM3-1.png",
       quantity: 0
     },
@@ -155,7 +155,7 @@ export class DataService {
       pNameURL: 'Model 3 T-shirts',
       pDesc: 'White soft cotton white T-shirt',
       additionalInfo: 'White T-shirt with black model 3 outline',
-      price: '$15.00',
+      price: '15.00',
       imageURL: '../../assets/Images/ImageM3-5.png',
       quantity: 0
     },
@@ -175,7 +175,7 @@ export class DataService {
       pNameURL: 'Model 3 T-shirts',
       pDesc: 'White soft cotton Model 3 T-shirt',
       additionalInfo: 'White T-shirt with black outline model 3 dog in frunk image',
-      price: '$11.00',
+      price: '11.00',
       imageURL: '../../assets/Images/ImageM3-7.png',
       quantity: 0
     },
@@ -185,7 +185,7 @@ export class DataService {
       pNameURL: 'Model 3 T-shirts',
       pDesc: 'Tesla Model 3 blue soft cotton T-shirt',
       additionalInfo: 'Blue model 3 t-shirt with white tesla model 3',
-      price: '$11.00',
+      price: '11.00',
       imageURL: '../../assets/Images/ImageM3-8.png',
       quantity: 0
     },
@@ -195,7 +195,7 @@ export class DataService {
       pNameURL: 'Model 3 T-shirts',
       pDesc: 'Black soft cotton Model 3 T-shirt',
       additionalInfo: 'Image of telsa model 3',
-      price: '$11.00',
+      price: '11.00',
       imageURL: '../../assets/Images/ImageM3-dark.png',
       quantity: 0
     }
@@ -384,7 +384,7 @@ export class DataService {
       pNameURL: 'Cyber Truck T-shirt',
       pDesc: 'Navy blue cyber truck t-shirt',
       additionalInfo: 'cyber truck graffiti and grey cyber truck image in front',
-      price: '$11.00',
+      price: '11.00',
       imageURL: '../../assets/Images/cyberShirt5.png',
       quantity: 0
     },
@@ -394,7 +394,7 @@ export class DataService {
       pNameURL: 'Cyber Truck T-shirt',
       pDesc: 'Black cyber truck t-shirt graffiti in white',
       additionalInfo: 'image of cyber truck three diffirent views',
-      price: '$11.00',
+      price: '11.00',
       imageURL: '../../assets/Images/cyberShirt6.png',
       quantity: 0
     },
@@ -414,7 +414,7 @@ export class DataService {
       pNameURL: 'Cyber Truck T-shirt',
       pDesc: 'image of baby Yoday in mini cyber-truck',
       additionalInfo: 'White soft cotton Cyter truck T-shirt',
-      price: '$11.00',
+      price: '11.00',
       imageURL: '../../assets/Images/cyberShirt8.png',
       quantity: 0
     },
