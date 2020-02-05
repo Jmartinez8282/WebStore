@@ -1,12 +1,12 @@
 .navback{
-    background-color: black;
+    background-color:black;
 }
 .nav-link,.nav-item,.btn {
     color: white;
     font-size:18px;
     padding:8px;
 }
-.navbar-expand-lg,.navnav {
+.navbar-expand-lg,.navnav{
      background-color:black;
      color:white;
 }
@@ -72,4 +72,10 @@
   font-size: 24px;
   margin-right: 7px;
   float: left;
+}
+.navbar-toggler{
+  background-color: white;
+} 
+.navbar-toggle-icon{
+  color:black;
 }
