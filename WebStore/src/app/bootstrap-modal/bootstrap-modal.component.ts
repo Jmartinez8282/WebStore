@@ -17,6 +17,7 @@ export class BootstrapModalComponent implements OnInit {
   ngOnInit() {
     this.productList = this.dService.getProducts();
     this.getProduct()
+    
   }
   getProduct(){
     const id = this.route.snapshot.paramMap.get('id');

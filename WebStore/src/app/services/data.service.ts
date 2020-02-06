@@ -131,6 +131,14 @@ export class DataService {
         x => x.id === sku
       ));
   }
+  getItems(id: string):Observable<Iproduct>{
+    return of (
+    (this.products.find(
+      products => products.id === id
+    )
+    ));
+  }
+
   private Eproducts: Iproduct[] = [
     {
       id: 'e467',
