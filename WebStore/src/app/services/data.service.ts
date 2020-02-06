@@ -6,12 +6,7 @@ import { User } from '../interface/user';
   providedIn: 'root'
 })
 export class DataService {
-  userList: User[] = [
-    {
-      userName:'jateen',
-      passWord:'JaTeam'
-    }
-  ];
+  userList: User[] = [];
   
   private products: Iproduct[] = [
     {
@@ -105,6 +100,24 @@ export class DataService {
     }
         return result;
       }
+      checkIfUserExists(userName:string):boolean{
+        let result = false;
+        
+        if (this.userList.find(x => userName.toLowerCase() === x.userName) !== undefined){
+        result = true;
+        }
+        return result;
+        }
+        addUser(userAccount:User){
+          this.userList.push(userAccount);
+          localStorage.setItem('user',JSON.stringify(this.userList));
+           console.log(userAccount);
+        }
+        setUserList(){
+          if(JSON.parse(localStorage.getItem('user')))
+          this.userList = JSON.parse(localStorage.getItem('user'));
+        }
+
 
 
 

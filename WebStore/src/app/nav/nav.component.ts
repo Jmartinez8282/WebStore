@@ -3,6 +3,7 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { Iproduct } from '../interfaces/iproduct';
 import { CartServices } from '../services/cart.service';
 import { DataService } from '../services/data.service';
+import { User } from '../interface/user';
 
 @Component({
   selector: 'app-nav',
@@ -28,7 +29,7 @@ export class NavComponent implements OnInit {
   cartItems: Iproduct[] = [];
   showList = false;
   cartTotal = 0;
-  constructor(private modalService: NgbModal, private cartService: CartServices,private dService:DataService) { }
+  constructor(private modalService: NgbModal, private cartService: CartServices,private dService:DataService) { dService.setUserList();}
 
   ngOnInit() {
 
@@ -48,6 +49,31 @@ export class NavComponent implements OnInit {
 
     });
   }
+signUp(uName:string,fName:string,lName:string,em:string,cem:string, pWord:string, cPW:string){
+
+  if ( em === cem && pWord.length > 3){
+    if (pWord === cPW)
+    if(this.dService.checkIfUserExists(uName)){
+      alert ('User Name already Exists');
+    
+    }else{
+      let addThisName: User = {
+        userName: uName,
+        firstName: fName, 
+       lastName: lName,
+       email:em ,
+       passWord: pWord, 
+      }
+      this.dService.addUser(addThisName);
+    }else{
+      alert('password does not match')
+    }
+    }else{
+      alert('an unexpected erro accoured.')
+    }
+    
+}
+
   logIn(userName:string,passWord:string){
     //we are going to compare password sore in our servi
     if(this.dService.checkCred(userName,passWord)){
@@ -56,6 +82,7 @@ export class NavComponent implements OnInit {
       alert ('Try again');
     }
     }
+    
 
   openXl(longcontent) {
     this.modalService.open(longcontent, { size: 'xl' });
