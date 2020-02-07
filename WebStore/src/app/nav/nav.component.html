@@ -81,7 +81,7 @@
                   </div>
                 </div>
                 <button type="button" (click)='signUp(un.value,fn.value,ln.value,ea.value,ce.value,pw.value,cpw.value)'
-                  class="btn btn-dark"routerLink="account">Create Account</button>
+                  class="btn btn-dark"routerLink="account"  (click)="modal.close('Close click')">Create Account</button>
               </form>
             </div>
             <div class="modal-footer">
@@ -123,7 +123,7 @@
                     aria-describedby="basic-addon1">
                 </div>
 
-                <button type="button" (click)='logIn(un.value,pw.value)' class="btn btn-dark">Log Me In!!</button>
+                <button type="button" (click)='logIn(un.value,pw.value)' class="btn btn-dark" (click)="modal.close('Close click')"routerLink="account">Log In</button>
               </form>
             </div>
             <div class="modal-footer">
