@@ -9,23 +9,25 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./bootstrap-modal.component.scss']
 })
 export class BootstrapModalComponent implements OnInit {
+  @Input()product;
   productList: Iproduct[];
+  
   closeResult: string;
-  @Input() product;
+ 
   constructor(private modalService: NgbModal,private dService:DataService,private route:ActivatedRoute) { }
 
   ngOnInit() {
     this.productList = this.dService.getProducts();
-    this.getProduct()
+    //this.getProduct()
     
   }
-  getProduct(){
-    const id = this.route.snapshot.paramMap.get('id');
-    const productName = this.route.snapshot.paramMap.get('productName');
-    this.dService.getProduct(id).subscribe(
-      item => this.product = item
-    )
-  }
+  //getProduct(){
+    //const id = this.route.snapshot.paramMap.get('id');
+    //const productName = this.route.snapshot.paramMap.get('productName');
+    //this.dService.getProduct(id).subscribe(
+      //item => this.product = item
+    //)
+  //}
   open(content) {
     
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title', size: 'xl'}).result.then((result) => {

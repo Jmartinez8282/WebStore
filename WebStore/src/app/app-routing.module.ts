@@ -21,6 +21,7 @@ const routes: Routes = [
   {path:'cyber-t',component:CyberTComponent},
   {path:'cart',component:CartComponent},
   {path:'account',component:AccountComponent},
+  {path:'check-out',component:CheckOutComponent},
   {
     path:'',
     redirectTo:'t-shirts',
