@@ -8,11 +8,11 @@ import { User } from '../interface/user';
 export class DataService {
   userList: User[] = [
     {
-      userName:'jateen',
-      passWord:'JaTeam'
+      userName: 'jateen',
+      passWord: 'JaTeam'
     }
   ];
-  
+
   private products: Iproduct[] = [
     {
       id: 's467',
@@ -96,15 +96,15 @@ export class DataService {
     },
   ]
   constructor() { }
-  checkCred(userName: string,passWord: string):boolean{
+  checkCred(userName: string, passWord: string): boolean {
     let result = false;
-    if(userName === this.userList[0].userName){
-    if(passWord === this.userList[0].passWord){
-      result = true;
-    }
-    }
-        return result;
+    if (userName === this.userList[0].userName) {
+      if (passWord === this.userList[0].passWord) {
+        result = true;
       }
+    }
+    return result;
+  }
 
 
 
@@ -246,18 +246,18 @@ export class DataService {
       id: 's470',
       pName: 'Model X T-shirts',
       pNameURL: 'Model X T-shirts',
-      pDesc: 'black soft cotton',
-      additionalInfo: 'They can cause a paper cut',
-      price: '$111.00',
+      pDesc: 'black soft cotton image of Tesla Model X with Falcon Wings Open',
+      additionalInfo: '',
+      price: '11.00',
       imageURL: '../../assets/Images/ImageX4.png',
       quantity: 0
     },
     {
       id: 's471',
       pName: 'Model X T-shirts',
-      pNameURL: 'NinjaStars',
-      pDesc: 'Something to do with Ninja Stars',
-      additionalInfo: 'They can cause a paper cut',
+      pNameURL: 'Model X T-shirts',
+      pDesc: 'Light grey Model X soft cotton t-shirt',
+      additionalInfo: '',
       price: '$11.00',
       imageURL: '../../assets/Images/ImageX5.png',
       quantity: 0
@@ -265,9 +265,9 @@ export class DataService {
     {
       id: 's471',
       pName: 'Model X T-shirts',
-      pNameURL: 'NinjaStars',
-      pDesc: 'Something to do with Ninja Stars',
-      additionalInfo: 'They can cause a paper cut',
+      pNameURL: 'Model X T-shirts',
+      pDesc: 'Green soft cotton Model X T-shirt',
+      additionalInfo: 'Green T-shirt with White model X image in the front',
       price: '$11.00',
       imageURL: '../../assets/Images/ImageX6.png',
       quantity: 0
@@ -333,6 +333,7 @@ export class DataService {
   }
   getYProduct(sku: string): Observable<Iproduct> {
     return of(
+      
       this.Yproducts.find(
         x => x.id === sku
       ));
