@@ -6,18 +6,8 @@ import { User } from '../interface/user';
   providedIn: 'root'
 })
 export class DataService {
-<<<<<<< HEAD
-  userList: User[] = [
-    {
-      userName: 'jateen',
-      passWord: 'JaTeam'
-    }
-  ];
-
-=======
   userList: User[] = [];
   
->>>>>>> 596556b471e66dd3ca9244a0067ff7d9d8e94844
   private products: Iproduct[] = [
     {
       id: 's467',
@@ -107,11 +97,9 @@ export class DataService {
       if (passWord === this.userList[0].passWord) {
         result = true;
       }
-<<<<<<< HEAD
     }
     return result;
   }
-=======
       checkIfUserExists(userName:string):boolean{
         let result = false;
         
@@ -130,7 +118,6 @@ export class DataService {
           this.userList = JSON.parse(localStorage.getItem('user'));
         }
 
->>>>>>> 596556b471e66dd3ca9244a0067ff7d9d8e94844
 
 
 
@@ -157,13 +144,8 @@ export class DataService {
       id: 'e467',
       pName: 'Model 3 T-shirts',
       pNameURL: 'Model 3 Tshirt',
-<<<<<<< HEAD
-      pDesc: 'Grey cotton Tesla Model 3 Shirt',
-      additionalInfo: 'image displays blue model 3 with red "My other car is a reservation"',
-=======
       pDesc: 'Grey Cotton Model 3 T-shirt',
       additionalInfo: 'image displays shatter glass of cyber truck',
->>>>>>> 596556b471e66dd3ca9244a0067ff7d9d8e94844
       price: '11.00',
       imageURL: "../../assets/Images/ImageM3-1.png",
       quantity: 0
@@ -285,13 +267,8 @@ export class DataService {
       id: 's470',
       pName: 'Model X T-shirts',
       pNameURL: 'Model X T-shirts',
-<<<<<<< HEAD
-      pDesc: 'black soft cotton image of Tesla Model X with Falcon Wings Open',
-      additionalInfo: '',
-=======
       pDesc: 'black soft cotton model x t-shirt',
       additionalInfo: 'Image of the tesla model X with falcon wings open',
->>>>>>> 596556b471e66dd3ca9244a0067ff7d9d8e94844
       price: '11.00',
       imageURL: '../../assets/Images/ImageX4.png',
       quantity: 0
@@ -300,15 +277,9 @@ export class DataService {
       id: 'x471',
       pName: 'Model X T-shirts',
       pNameURL: 'Model X T-shirts',
-<<<<<<< HEAD
-      pDesc: 'Light grey Model X soft cotton t-shirt',
-      additionalInfo: '',
-      price: '$11.00',
-=======
       pDesc: 'light Grey Tesla Model X T-shirt',
       additionalInfo: 'light grey soft cotton telsa model x t-shirt',
       price: '11.00',
->>>>>>> 596556b471e66dd3ca9244a0067ff7d9d8e94844
       imageURL: '../../assets/Images/ImageX5.png',
       quantity: 0
     },
@@ -316,15 +287,9 @@ export class DataService {
       id: 's471',
       pName: 'Model X T-shirts',
       pNameURL: 'Model X T-shirts',
-<<<<<<< HEAD
-      pDesc: 'Green soft cotton Model X T-shirt',
-      additionalInfo: 'Green T-shirt with White model X image in the front',
-      price: '$11.00',
-=======
       pDesc: 'Green Tesla Model X T-shirt',
       additionalInfo: 'Green soft cotton white tesla image in front',
       price: '11.00',
->>>>>>> 596556b471e66dd3ca9244a0067ff7d9d8e94844
       imageURL: '../../assets/Images/ImageX6.png',
       quantity: 0
     },
