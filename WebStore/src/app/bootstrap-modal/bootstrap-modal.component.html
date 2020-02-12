@@ -6,26 +6,28 @@
       </button>
     </div>
     <div class="modal-body">
-      <form>
-        <div class="form-group">
-          <label for="dateOfBirth"></label>
-          <div class="input-group">
-            <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button"></button>
+      <div class="card mb-3" style="max-width: 1080px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img [src]='product.imageURL'class="card-img-top" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{product.pName}}</h5>
+              <h6>{{product.pNameURL}}</h6>
+              <h6>{{product.pDesc}}</h6>
+              <h6>{{product.additionalInfo}}</h6>
+              <h6>${{product.price}}</h6>
+              <p class="card-text"></p>
+              <a>Item#{{product.id}}</a>
             </div>
           </div>
         </div>
-      </form>
+      </div>
     </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
-    </div>
-  </ng-template>
+    </ng-template>
   
   <button class="btn btn-link" (click)="open(content)">View Item</button>
   
-  <hr>
   
-  <pre>{{closeResult}}</pre>
   

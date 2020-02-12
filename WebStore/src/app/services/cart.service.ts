@@ -17,7 +17,7 @@ export class CartServices {
   removeProduct(item,index){
     this.cartItems.splice(index, 1);
     const totalPrice = item.quantity * +item.price;
-    this.cartTotal = totalPrice;
+    
     this.cartTotal -= totalPrice;
     this.cartQuantity -= item.quantity;
   

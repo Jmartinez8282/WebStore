@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Iproduct } from '../interfaces/iproduct';
 import { DataService } from '../services/data.service';
+import { CartServices } from '../services/cart.service';
 
 @Component({
   selector: 'app-card-ct',
@@ -10,11 +11,14 @@ import { DataService } from '../services/data.service';
 export class CardCtComponent implements OnInit {
 
   productCList: Iproduct[];
-  constructor(private CService:DataService) { }
+  constructor(private CService:DataService,private CartService:CartServices) { }
 
   ngOnInit() {
     this.productCList = this.CService.getCProducts();
 
 }
+addToCart(item){
+  this.CartService.addItemsToCart(item);
 
+}
 }
