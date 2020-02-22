@@ -132,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "WebStore"
+  "defaultProject": "WebStore",
+  "cli": {
+    "analytics": "85bb7983-db91-42aa-a184-7fc90ada7ba5"
+  }
 }

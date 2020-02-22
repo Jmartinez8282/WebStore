@@ -91,15 +91,15 @@ export class DataService {
     },
   ]
   constructor() { }
-  checkCred(userName: string,passWord: string):boolean{
+  checkCred(userName: string, passWord: string): boolean {
     let result = false;
-    if(userName === this.userList[0].userName){
-    if(passWord === this.userList[0].passWord){
-      result = true;
-    }
-    }
-        return result;
+    if (userName === this.userList[0].userName) {
+      if (passWord === this.userList[0].passWord) {
+        result = true;
       }
+    }
+    return result;
+  }
       checkIfUserExists(userName:string):boolean{
         let result = false;
         
@@ -354,6 +354,7 @@ export class DataService {
   }
   getYProduct(sku: string): Observable<Iproduct> {
     return of(
+      
       this.Yproducts.find(
         x => x.id === sku
       ));
